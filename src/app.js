@@ -31,21 +31,12 @@ class Player {
     this.strength = this.getRandomStrength();
     this.image = 'images/super-' + (id + 1) + '.png';
   }
-  // getting random strength
   getRandomStrength = () => {
     return Math.ceil(Math.random() * 100);
   };
 
   // Progression 2: Create a player for displaying
   view = () => {
-    // Accumulate HTML template
-    // Type your code here
-    // let player = `<div class="player" data-id="${this.id}">
-    // <img src="${this.image}" alt="">
-    // <div class="name">${this.name}</div>
-    // <div class="strength">${this.strength}</div>
-    // </div>`;
-
     let divOfPlayer = document.createElement('div');
     divOfPlayer.classList.add('player');
     divOfPlayer.setAttribute('data-id', this.id);
